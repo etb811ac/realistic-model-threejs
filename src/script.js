@@ -188,6 +188,8 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
+if (window.innerWidth < 400) gui.close()
+
 /**
  * Animate
  */
